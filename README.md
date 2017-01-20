@@ -19,5 +19,5 @@ Notes:
 
 1-This is a Spring boot application
 
-2-I assumed unit testing is not part of the requirement 
+2-I assumed unit testing is not part of the requirements 
 
