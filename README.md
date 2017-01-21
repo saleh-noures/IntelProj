@@ -4,9 +4,7 @@ To Run The Application:
 
    1-Clone or download the project
 
-   2-Run ” mvn clean package” inside “saleh” folder
-
-   3-Run java –jar target/saleh-0.0.1-SNAPSHOT.jar
+   2-Run ” mvn clean spring-boot:run ” inside “saleh” folder
 
    4-The application is secured so you need credentials :
 
