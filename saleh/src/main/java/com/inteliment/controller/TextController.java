@@ -27,7 +27,7 @@ public class TextController {
     @Autowired
     TextService textServiceImp;
 
-    @RequestMapping(path = "/search", method = RequestMethod.POST, produces = "application/json", consumes="application/json")
+    @RequestMapping(path = "/search", method = RequestMethod.POST, produces = "application/json")
         public Map<String, List<HashMap<String, Integer>>> search( @RequestBody Map<String, Object> body)
         {
          List<String> searchTexts = (ArrayList<String>) body.get("searchText");
