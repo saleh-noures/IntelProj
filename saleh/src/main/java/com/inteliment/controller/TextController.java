@@ -38,11 +38,13 @@ public class TextController {
      @RequestMapping(path = "/top/{topNo}", method = RequestMethod.GET)
         public String getTop(@PathVariable int topNo)  throws NotInRangeException
         {
+             /* This is a very basic validation. for beans we can use JSR-303/JSR-349 Bean Validation API */
              if (topNo != 5 && topNo != 10 && topNo != 20 && topNo != 30 )
              {
                  /*Enable the line below to return BAD REQUEST (400) Http response status and an error message
                   * when using a browser to send the request*/
                  //throw new NotInRangeException(topNo);
+
                  return  "Invalid TopNo: "+ topNo + ", Please select a number form this range (5, 10, 20, 30)!";
              }
              String response = textServiceImp.getTopCount(topNo);
