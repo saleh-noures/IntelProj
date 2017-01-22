@@ -6,11 +6,7 @@ To Run The Application:
 
    2-Run ” mvn clean spring-boot:run ” inside “saleh” folder
 
-   4-The application is secured so you need credentials :
-
-      Username : user
-   
-      Password : is written on the console we starting the application
+   4-The application is secured by Spring Security so you need setup the credentials in application.proprties  
    
 To Test The Application: 
 
